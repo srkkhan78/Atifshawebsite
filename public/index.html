@@ -258,10 +258,10 @@ shop.<span class="fn">launch</span>(); <span class="cm">// 🚀</span></code></p
       </div>
       <form class="contact-form" id="contactForm">
         <div class="form-row">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
         </div>
-        <select required>
+        <select name="service" required>
           <option value="" disabled selected>What do you need?</option>
           <option>Shop / POS System</option>
           <option>Café / Restaurant App</option>
@@ -271,7 +271,7 @@ shop.<span class="fn">launch</span>(); <span class="cm">// 🚀</span></code></p
           <option>Business Management Tool</option>
           <option>Something Else</option>
         </select>
-        <textarea placeholder="Describe your business and what you'd like to build..." rows="4" required></textarea>
+        <textarea name="message" placeholder="Describe your business and what you'd like to build..." rows="4" required></textarea>
         <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
         <p class="form-note" id="formMsg"></p>
       </form>
