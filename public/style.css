@@ -98,8 +98,8 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   justify-content: space-between;
   height: 64px;
 }
-.logo { font-size: 1.2rem; font-weight: 800; color: var(--text); }
-.logo span { color: var(--accent2); }
+.logo { display: flex; align-items: center; }
+.logo-img { height: 44px; width: auto; border-radius: 6px; object-fit: contain; }
 .nav-links {
   display: flex;
   align-items: center;
