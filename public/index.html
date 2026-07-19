@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AtifshaCode — Digital Solutions for Your Business</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">Atifsha<span>Code</span></a>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#how">How It Works</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact" class="btn btn-sm">Get a Quote</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="badge">💡 Custom Software for Real Businesses</span>
+        <h1>We Build <span class="accent">Digital Systems</span> That Grow Your Business</h1>
+        <p>From point-of-sale systems for your shop, to ordering apps for your café, to full web platforms — we turn your idea into working software.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Start Your Project</a>
+          <a href="#services" class="btn btn-ghost">See What We Build ↓</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span>50+</span><p>Projects Delivered</p></div>
+          <div class="stat"><span>10+</span><p>Business Types Served</p></div>
+          <div class="stat"><span>100%</span><p>Custom Code</p></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-bar">
+            <span></span><span></span><span></span>
+            <p>shop-system.js</p>
+          </div>
+          <pre><code><span class="kw">const</span> shop = <span class="fn">createSystem</span>({
+  type: <span class="str">"cafe"</span>,
+  features: [
+    <span class="str">"pos"</span>,
+    <span class="str">"inventory"</span>,
+    <span class="str">"orders"</span>,
+    <span class="str">"reports"</span>
+  ]
+});
+
+shop.<span class="fn">launch</span>(); <span class="cm">// 🚀</span></code></pre>
+        </div>
+        <div class="float-badge badge-1">✅ POS System Ready</div>
+        <div class="float-badge badge-2">📱 Mobile Friendly</div>
+        <div class="float-badge badge-3">☁️ Cloud Hosted</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge">What We Build</span>
+        <h2>Software for Every Business Type</h2>
+        <p>We specialize in custom digital systems — designed for how you actually work.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="card service-card">
+          <div class="icon">🏪</div>
+          <h3>Shop Management Systems</h3>
+          <p>Point-of-sale, inventory tracking, supplier management, and sales reports — everything a retail shop needs in one system.</p>
+          <ul>
+            <li>Barcode scanning & checkout</li>
+            <li>Stock alerts & reorder</li>
+            <li>Daily/monthly sales reports</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="icon">☕</div>
+          <h3>Café & Restaurant Apps</h3>
+          <p>Digital menus, table ordering, kitchen display screens, and payment integration — built specifically for food businesses.</p>
+          <ul>
+            <li>QR code digital menu</li>
+            <li>Order management dashboard</li>
+            <li>Receipt printing & payments</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="icon">🌐</div>
+          <h3>Web Applications</h3>
+          <p>Full-featured web apps for any business process — booking systems, customer portals, admin dashboards, and more.</p>
+          <ul>
+            <li>Booking & appointment systems</li>
+            <li>Customer self-service portals</li>
+            <li>Admin & analytics dashboards</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="icon">📱</div>
+          <h3>Mobile Apps</h3>
+          <p>Android and iOS apps that put your business in your customers' pockets — from loyalty programs to on-demand ordering.</p>
+          <ul>
+            <li>Customer-facing order apps</li>
+            <li>Loyalty & rewards programs</li>
+            <li>Push notification campaigns</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="icon">📊</div>
+          <h3>Business Management Tools</h3>
+          <p>Custom ERP and management tools to handle HR, payroll, invoicing, and operations — tailored to your workflow.</p>
+          <ul>
+            <li>Employee & payroll tracking</li>
+            <li>Invoice & billing automation</li>
+            <li>Multi-branch management</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="icon">🛒</div>
+          <h3>E-Commerce Stores</h3>
+          <p>Sell your products online with a fully custom store — product catalog, secure checkout, and order management included.</p>
+          <ul>
+            <li>Custom product catalog</li>
+            <li>Secure online payments</li>
+            <li>Order tracking for customers</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="section tech-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge">Technologies</span>
+        <h2>Built with Modern, Proven Tools</h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-pill">⚛️ React</div>
+        <div class="tech-pill">🟩 Node.js</div>
+        <div class="tech-pill">🐍 Python</div>
+        <div class="tech-pill">🗄️ PostgreSQL</div>
+        <div class="tech-pill">📱 React Native</div>
+        <div class="tech-pill">☁️ Cloud Hosting</div>
+        <div class="tech-pill">🔐 Secure Auth</div>
+        <div class="tech-pill">💳 Payments API</div>
+        <div class="tech-pill">📊 Data Analytics</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section how-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge">Process</span>
+        <h2>From Idea to Working Software</h2>
+        <p>A clear, straightforward process with no surprises.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Tell Us Your Idea</h3>
+          <p>Describe your business and what problem you want to solve. No technical knowledge needed — we translate your needs into a plan.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>We Design a Solution</h3>
+          <p>We create a detailed proposal with features, timeline, and cost. You approve before any development begins.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>We Build It</h3>
+          <p>Our developers build your system with regular updates and demos so you always know the progress.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Launch & Support</h3>
+          <p>We deploy your system, train your team, and stay available for ongoing support and improvements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section portfolio-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge">Portfolio</span>
+        <h2>Solutions We've Built</h2>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card" style="--accent:#6366f1">
+          <div class="p-icon">🛍️</div>
+          <div class="p-tag">Retail Shop</div>
+          <h3>QuickShop POS</h3>
+          <p>A complete point-of-sale and inventory system for a multi-branch clothing store with 3,000+ products.</p>
+          <div class="p-tech"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+        </div>
+        <div class="portfolio-card" style="--accent:#f59e0b">
+          <div class="p-icon">☕</div>
+          <div class="p-tag">Café</div>
+          <h3>BrewOrder App</h3>
+          <p>QR-based table ordering and kitchen display system that reduced order errors by 90% for a busy café chain.</p>
+          <div class="p-tech"><span>React Native</span><span>Firebase</span></div>
+        </div>
+        <div class="portfolio-card" style="--accent:#10b981">
+          <div class="p-icon">💈</div>
+          <div class="p-tag">Service Business</div>
+          <h3>SlotBook</h3>
+          <p>Online appointment booking with automated reminders and staff scheduling for a salon group.</p>
+          <div class="p-tech"><span>Next.js</span><span>Stripe</span><span>SMS API</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-inner">
+      <div class="contact-text">
+        <h2>Ready to Build Your System?</h2>
+        <p>Tell us about your business and what you need. We'll get back to you with a free consultation and estimate — usually within 24 hours.</p>
+        <div class="contact-details">
+          <div class="contact-item">📧 <span>hello@atifshacode.com</span></div>
+          <div class="contact-item">💬 <span>WhatsApp / Telegram available</span></div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <select required>
+          <option value="" disabled selected>What do you need?</option>
+          <option>Shop / POS System</option>
+          <option>Café / Restaurant App</option>
+          <option>Web Application</option>
+          <option>Mobile App</option>
+          <option>E-Commerce Store</option>
+          <option>Business Management Tool</option>
+          <option>Something Else</option>
+        </select>
+        <textarea placeholder="Describe your business and what you'd like to build..." rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+        <p class="form-note" id="formMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo">Atifsha<span>Code</span></a>
+      <p>Custom software for shops, cafés, and businesses of every kind.</p>
+      <p class="footer-copy">© 2026 AtifshaCode. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
