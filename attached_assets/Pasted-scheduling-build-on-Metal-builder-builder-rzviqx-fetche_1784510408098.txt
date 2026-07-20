@@ -1,0 +1,105 @@
+scheduling build on Metal builder "builder-rzviqx"
+fetched snapshot sha256:c6156e5aa46f6cf46b030779e7bed9661ce120946b4b0137bf585ba338cb4292 (110 kB bytes)
+fetching snapshot
+107.4 KB
+399ms
+unpacking archive
+180 KB
+2ms
+using build driver nixpacks-v1.41.0
+ 
+╔════════ Nixpacks v1.41.0 ═══════╗
+║ setup      │ nodejs_18, npm-9_x ║
+║─────────────────────────────────║
+║ install    │ npm ci             ║
+║─────────────────────────────────║
+║ build      │ npm install        ║
+║─────────────────────────────────║
+║ start      │ node server.js     ║
+╚═════════════════════════════════╝
+ 
+ 
+Saved output to:
+  snapshot-target-unpack
+
+internal
+load build definition from Dockerfile
+1ms
+
+internal
+load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-1745885067
+406ms
+
+internal
+load .dockerignore
+0ms
+UndefinedVar: Usage of undefined variable '$NIXPACKS_PATH' (line 18)(https://docs.docker.com/go/dockerfile/rule/undefined-var/)
+ details: Variables should be defined before their use
+
+stage-0
+FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067@sha256:d45c89d80e13d7ad0fd555b5130f22a866d9dd10e861f589932303ef2314c7de
+31ms
+
+internal
+load build context
+0ms
+
+stage-0
+RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d cached
+1ms
+
+stage-0
+COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix cached
+0ms
+
+stage-0
+WORKDIR /app/ cached
+0ms
+
+stage-0
+COPY . /app/.
+165ms
+
+stage-0
+RUN npm ci
+1m 11s
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-07-20T01_06_16_032Z-debug-0.log
+
+stage-0
+COPY . /app/.
+148ms
+
+stage-0
+RUN npm install
+1m 11s
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-07-20T01_07_27_362Z-debug-0.log
+
+stage-0
+RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile
+482ms
+
+stage-0
+COPY . /app
+1s
+
+exporting to docker image format
+1s
+containerimage.digest: sha256:aca344d4b4c5e40669ca197d3cf999cae2658d3f9633099ab947b2ca150360d7
+containerimage.descriptor: eyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQub2NpLmltYWdlLm1hbmlmZXN0LnYxK2pzb24iLCJkaWdlc3QiOiJzaGEyNTY6YWNhMzQ0ZDRiNGM1ZTQwNjY5Y2ExOTdkM2NmOTk5Y2FlMjY1OGQzZjk2MzMwOTlhYjk0N2IyY2ExNTAzNjBkNyIsInNpemUiOjI3NTYsImFubm90YXRpb25zIjp7Im9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5jcmVhdGVkIjoiMjAyNi0wNy0yMFQwMTowODo0MFoifSwicGxhdGZvcm0iOnsiYXJjaGl0ZWN0dXJlIjoiYW1kNjQiLCJvcyI6ImxpbnV4In19
+containerimage.config.digest: sha256:9ddebe1eae6b1a0e50f317199e6466f92e46188d9c69d2d5830a5ddfa120124d
+image push
+250.1 MB
+9.4s
+ 
+====================
+Starting Healthcheck
+====================
+Path: /
+Retry window: 5m0s
+ 
+Attempt #1 failed with service unavailable. Continuing to retry for 4m49s
+Attempt #2 failed with service unavailable. Continuing to retry for 4m38s
+Attempt #3 failed with service unavailable. Continuing to retry for 4m26s
+Attempt #4 failed with service unavailable. Continuing to retry for 4m12s
+Attempt #5 failed with service unavailable. Continuing to retry for 3m54s
+Attempt #6 failed with service unavailable. Continuing to retry 
